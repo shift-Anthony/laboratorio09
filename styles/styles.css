@@ -13,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-/* Boton para aregresar a index.html*/
+/* Boton para regresar a index.html*/
 .return-nav {
     background-color: #f0f2f5;
     color: white;
@@ -66,11 +66,9 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    /* Hacemos que los elementos de la lista se pongan en fila horizontal*/
     margin: 0;
     padding: 0;
     gap: 200px;
-    /*Damos espacion entre los elementos */
 
 }
 
@@ -82,11 +80,10 @@ ul {
     transition: background-color 0.3s;
     border: 1px solid #777;
     border-radius: 5px;
-    /* Redondeamos las esquinas para que se vea mejor */
 }
 
 .nav-principal ul li a:hover {
     background-color: #555;
     border-color: #fff;
-    /* Opcional: cambia el color del borde en hover */
+
 }
