@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles.css">n
-</head>
+    <title>Modelo de Cajas y Flexbox</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .card-container {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #ffffff;
 
+            display: flex;
+            justify-content: space-around;
+            /* flex y  justify content */
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 25px;
+            margin: 0 10px;
+            width: 20%;
+            background-color: #fafafa;
+            text-align: center;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
 <body>
+    <h1>Uso de Tarjetas con Flexbox</h1>
     <header>
-        <nav>
-            <a href="/index.html">Regresar a la pagina principal</a>
+        <nav class="return-nav">
+            <a href="/index.html">Retornar al index</a>
         </nav>
     </header>
+    <div class="card-container">
+
+        <div class="card">
+            <h2>Tarjeta 1</h2>
+        </div>
+
+        <div class="card">
+            <h2>Tarjeta 2</h2>
+        </div>
+
+        <div class="card">
+            <h2>Tarjeta 3</h2>
+        </div>
+
+        <div class="card">
+            <h2>Tarjeta 4</h2>
+        </div>
+
+        <div class="card">
+            <h2>Tarjeta 5</h2>
+        </div>
+
+        <div class="card">
+            <h2>Tarjeta 6</h2>
+        </div>
+    </div>
+
 </body>
 
 </html>

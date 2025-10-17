@@ -1,0 +1,92 @@
+/* Variables que repiten en todas las paginas*/
+body {
+    background-color: #f0f2f5;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* Boton para aregresar a index.html*/
+.return-nav {
+    background-color: #f0f2f5;
+    color: white;
+    display: flex;
+    margin: 0 20px;
+    padding: 20px;
+    width: 10%;
+}
+
+.return-nav a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 50px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.return-nav a:hover {
+    background-color: #555;
+    border-color: #fff;
+
+}
+
+/* Solo aparece en index.html*/
+.first-header {
+    
+    background-color: 333;
+    color: black;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    background-color: black;
+    color: white;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal {
+    flex-grow: 1;
+}
+
+.nav-principal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Hacemos que los elementos de la lista se pongan en fila horizontal*/
+    margin: 0;
+    padding: 0;
+    gap: 200px;
+    /*Damos espacion entre los elementos */
+
+}
+
+.nav-principal ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    display: flexbox;
+    transition: background-color 0.3s;
+    border: 1px solid #777;
+    border-radius: 5px;
+    /* Redondeamos las esquinas para que se vea mejor */
+}
+
+.nav-principal ul li a:hover {
+    background-color: #555;
+    border-color: #fff;
+    /* Opcional: cambia el color del borde en hover */
+}
