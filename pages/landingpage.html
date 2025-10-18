@@ -1,19 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-</head>
+    <style>
+        /*Variables iniciales*/
+        * {
+            box-sizing: border-box;
+        }
 
-<body>
-    <h1>Landing Page</h1>
-    <header>
-        <nav class="return-nav">
-            <a href="/index.html">Retornar al index</a>
+        body {
+            background-color: #f0f2f5;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto auto;
+        }
+
+        .header,
+        .hero,
+        .main,
+        .footer {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        /* flexbox */
+        .header {
+            background-color: black;
+            border: 1px solid #ddd;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+        }
+
+        .main-nav ul {
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 50px;
+            display: flexbox;
+            transition: background-color 0.3s;
+            border: 1px solid #777;
+            border-radius: 5px;
+        }
+
+        .main-nav ul li a:hover {
+            background-color: #555;
+            border-color: #fff;
+
+        }
+
+        /* flexbox */
+        .hero {
+            background-color: #04203d;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 20px 0;
+        }
+
+        .hero .cta-button {
+            background-color: #05619f51;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        /* Boton para regresar a index.html*/
+        .return-nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            margin: 0 20px;
+            padding: 10px 30px;
+            border: 1px solid #777;
+            border-radius: 5px;
+            text-decoration: none;
+
+        }
+
+        .return-nav:hover {
+            background-color: #555;
+            border-color: #fff;
+
+        }
+    </style>
+</head>
+<div class="grid-container">
+
+    <header class="header">
+        <a href="/index.html" class="return-nav">Retornar al index</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
     </header>
+
+    <section class="hero">
+        <h1>Landing page</h1>
+        <button class="cta-button">Haz Clic Aquí</button>
+    </section>
+
+    <main class="main">
+        <h2>Contenido Principal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia rerum libero tempore minus similique,
+            sapiente unde. Enim rem doloribus sunt expedita, mollitia voluptates ipsa delectus quo accusantium, cum
+            neque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex magni voluptatibus laudantium accusamus, sunt ab
+            unde odit similique modi exercitationem hic. Eveniet tempore velit doloremque veritatis aliquam debitis
+            dignissimos molestias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatum. Aut sequi illo ipsum earum
+            aperiam maxime dolorum non voluptas incidunt. Soluta earum nostrum hic, omnis accusantium laudantium libero
+            aspernatur?</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Todos los derechos reservados.</p>
+    </footer>
+
+</div>
+
+<body>
 </body>
 
 </html>

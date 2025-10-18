@@ -13,6 +13,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 /* Boton para regresar a index.html*/
 .return-nav {
     background-color: #f0f2f5;
@@ -41,7 +42,7 @@ ul {
 
 /* Solo aparece en index.html*/
 .first-header {
-    
+
     background-color: 333;
     color: black;
     padding: 15px 30px;
